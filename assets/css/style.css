@@ -17,14 +17,11 @@ text-align: center;
 
 
 }
-.questions {
-    font-family: 'Waiting for the Sunrise', cursive;
 
-}
 
 img {
   max-height: 250px;
-  width: auto;
+  width: 250px;
 }
 
 #answerblock {
@@ -35,11 +32,14 @@ img {
 #questionblock {
   text-align: center;
   font-weight: bold;
+  font-family: 'Lilita One', cursive;
   
 }
 
+    
 #reset {
   visibility: visible;
+  margin-top: 0px;
 }
 
 body {
@@ -54,14 +54,14 @@ h1 {
   font-weight: bolder;
   padding: 20px;
   font-size: 45px;
-  -webkit-text-stroke: 1px black;
+  
 }
 
 
 p {
   margin: 10px;
   font-weight: bold;
-  color: red;
+ 
   font-size: 20px;
   
 
@@ -73,6 +73,12 @@ h2, h4 {
  
 
 
+}
+#correct {
+ color: green;
+}
+#wrong {
+    color: red;
 }
 
 .container {
@@ -92,8 +98,11 @@ h2, h4 {
   position: relative;
   bottom: -150px;
   padding: 2%;
-  font-family: 'Waiting for the Sunrise', cursive;
   font-size: 20px;
   -webkit-text-stroke: .05px black;
+  font-family: 'Lilita One', cursive;
 
+}
+.questions {
+    font-family: 'Lilita One', cursive;
 }

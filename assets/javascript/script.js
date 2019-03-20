@@ -91,7 +91,7 @@ $(document).ready(function () {
         if (timer === 0) {
             unanswerCount++;
             stop();
-            $("#answerblock").html("<p>Time is up! The correct answer is: <button>" + pick.choice[pick.answer] + "</button></p>");
+            $("#answerblock").html("<p>Time is up! The correct answer is: " + pick.choice[pick.answer] + "</p>");
             hidepicture();
         }	
     }
@@ -116,7 +116,7 @@ $(document).ready(function () {
             //iterate through answer array and display
             $("#questionblock").html("<div><h2>" + pick.question + "</h2></div>");
             for(var i = 0; i < pick.choice.length; i++) {
-                var userChoice = $("<div>");
+                var userChoice = $("<button class='btn-primary questions'>");
                 userChoice.addClass("answerchoice");
                 userChoice.html(pick.choice[i]);
                 //assign array position to it so can check answer
@@ -137,14 +137,14 @@ $(document).ready(function () {
             stop();
             correctCount++;
             userGuess="";
-            $("#answerblock").html("<p>Correct!</p>");
+            $("#answerblock").html("<p id = 'correct'>Correct!</p>");
             hidepicture();
     
         } else {
             stop();
             wrongCount++;
             userGuess="";
-            $("#answerblock").html("<p>Wrong! The correct answer is: " + pick.choice[pick.answer] + "</p>");
+            $("#answerblock").html("<p id = 'wrong'>Wrong! The correct answer is: " + pick.choice[pick.answer] + "</p>");
             hidepicture();
         }
     })
