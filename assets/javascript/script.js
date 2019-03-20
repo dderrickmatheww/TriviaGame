@@ -4,49 +4,49 @@ $(document).ready(function () {
             question: " During his embarrassing Dundie award presentation, Michael covers a number of popular songs. To whom is Michael presenting a Dundie award when he sings along to: You Sexy Thing by '70s British funk band Hot Chocolate?", 
             choice: ["Ryan", "Kevin", "Dwight", "Himself"],
             answer: 0,
-            photo: "assets/images/pupusas.jpg"
+            photo: "assets/images/tenor.gif"
          },
          {
              question: "What is Michael Scott's middle name?", 
             choice: ["Scarn", "Jay", "Gary", "Burrito"],
             answer: 2,
-            photo: "assets/images/mtdew.gif"
+            photo: "assets/images/mike.gif"
          }, 
          {
              question: "In the episode 'Basketball', who does Michael say is on the team, 'of course'?", 
             choice: ["Dwight", "Jim", "Stanley", "Toby" ],
             answer: 2,
-            photo: "assets/images/coffee.gif"
+            photo: "assets/images/bball.gif"
         }, 
         {
             question: "What is the exclusive club that Pam, Oscar, and Toby establish in the episode 'Branch Wars'?", 
             choice: ["Reading Club", "The Nicier Things Club", "The Smaller Things Club", "The Finer Things Club" ],
             answer: 3,
-            photo: "assets/images/harvey.jpg"
+            photo: "assets/images/ftc.png"
         }, 
         {
             question: "What substance does Jim put office supplies owned by Dwight and Andy into?", 
             choice: ["Alchol", "Feces", "Jello", "Cake" ],
             answer: 2,
-            photo: "assets/images/dozen.jpg"
+            photo: "assets/images/jello.jpg"
         }, 
         {
             question: "Where did Michael get his 'World's Best Boss' mug?", 
             choice: ["Hot Topic", "Spencer's", "Barns and Nobles", "He made it" ],
             answer: 1,
-            photo: "assets/images/herring.jpg"
+            photo: "assets/images/wbb.gif"
         }, 
         {
             question: "He once suggested that his middle name was 'Danger', but what is Dwight Schrute's actual middle name?", 
             choice: ["Stewart", "Kurt", "Keith", "Lemon" ],
             answer: 1,
-            photo: "assets/images/lemon.gif"
+            photo: "assets/images/middle.gif"
         }, 
         {
             question: "At Jim and Pam's wedding in the 'Niagara' episode, what was Kevin wearing on his feet?", 
             choice: ["Tissue Boxes", "Shoe Boxes", "Ice Bags", "Bare-feet" ],
             answer: 0,
-            photo: "assets/images/guava.gif"
+            photo: "assets/images/truth.gif"
         }];
     
     var correctCount = 0;
@@ -61,7 +61,7 @@ $(document).ready(function () {
     var index;
     var newArray = [];
     var holder = [];
-    
+    var audio = new Audio('assets/audio/Theme Song.mp3')
     
     
     $("#reset").hide();
@@ -72,6 +72,7 @@ $(document).ready(function () {
             runTimer();
             for(var i = 0; i < options.length; i++) {
         holder.push(options[i]);
+        audio.play();
     }
         })
     //timer start

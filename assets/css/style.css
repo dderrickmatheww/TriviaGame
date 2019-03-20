@@ -15,6 +15,7 @@ border-bottom: 3px solid burlywood;
 font-family: 'Waiting for the Sunrise', cursive;
 text-align: center;
 
+
 }
 .questions {
     font-family: 'Waiting for the Sunrise', cursive;
@@ -53,6 +54,7 @@ h1 {
   font-weight: bolder;
   padding: 20px;
   font-size: 45px;
+  -webkit-text-stroke: 1px black;
 }
 
 
@@ -68,7 +70,7 @@ p {
 h2, h4 {
   margin: 30px;
   font-weight: bold;
-  
+ 
 
 
 }
@@ -81,6 +83,7 @@ h2, h4 {
   height: 500px;
   width: 50%;
   text-align: center;
+
   
 
 }
@@ -90,5 +93,7 @@ h2, h4 {
   bottom: -150px;
   padding: 2%;
   font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 20px;
+  -webkit-text-stroke: .05px black;
 
 }
